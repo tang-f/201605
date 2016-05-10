@@ -7,5 +7,8 @@ RUN	apt-get update; \
 
 RUN	mkdir /home/git; \
 	cd /home/git; \
-	git clone https://github.com/tang-f/201605.git ; 
+	git clone https://github.com/tang-f/201605.git ; \
+	cd 201605; \
+	find . -name .git -exec rm -rf {} \; \
+	rm -rf apache; 
 
