@@ -7,5 +7,5 @@ RUN	apt-get update; \
 
 RUN	mkdir /home/git; \
 	cd /home/git; \
-	sudo git clone https://github.com/tang-f/201605.git -b master; 
+	git clone https://github.com/tang-f/201605.git ; 
 
