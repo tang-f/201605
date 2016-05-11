@@ -9,5 +9,7 @@ RUN	mkdir /home/git; \
 	cd /home/git; \
 	git clone https://github.com/tang-f/201605.git ; \
 	cd 201605; \
-	rm -rf apache .git; 
+	rm -rf apache .git README.md; 
+
+WORKDIR	/home/git
 
