@@ -5,11 +5,11 @@ MAINTAINER tangf <316907331@qq.com>
 RUN	apt-get update; \
 	apt-get -y install g++ git subversion
 
-RUN	mkdir /home/git; \
-	cd /home/git; \
+RUN	mkdir /var/www/html; \
+	cd /var/www/html; \
 	git clone https://github.com/tang-f/201605.git ; \
 	cd 201605; \
 	rm -rf apache .git README.md; 
 
-WORKDIR	/home/git
+WORKDIR	/var/www/html
 
